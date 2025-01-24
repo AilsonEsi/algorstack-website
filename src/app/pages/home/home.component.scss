@@ -1,16 +1,8 @@
-
-  
-.testimonial-item {
-  text-align: center!important;
-  padding: 30px!important;
-  background: #f9f9f9!important;
-  border-radius: 10px!important;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)!important;
+.hero .animated {
+  transform: translateX(-0%);
+  animation: float 3s ease-in-out infinite;
 }
-
-.testimonial-img {
-  width: 100px!important;
-  height: 100px!important;
-  border-radius: 50%!important;
-  margin: 0 auto 20px auto!important;
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
