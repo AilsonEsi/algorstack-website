@@ -7,33 +7,16 @@ body {
   color: white;
 }
 
-
 .banner {
   background: linear-gradient(135deg, #1EB2CC, #006EBC);
-  color: white;
-  padding: 100px 0;
-  text-align: center;
-  position: relative;
 }
 
-.floating-illustration {
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: float 3s ease-in-out infinite;
+.website-backgroud-gradiente {
+  background: linear-gradient(135deg, #1EB2CC, #006EBC) !important; 
 }
 
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateX(-50%) translateY(0);
-  }
-
-  50% {
-    transform: translateX(-50%) translateY(-10px);
-  }
+.btn-gradient{
+  background: linear-gradient(135deg, #1EB2CC, #006EBC) !important; 
 }
 
 .footer {

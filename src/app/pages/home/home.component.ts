@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import Swiper from 'swiper';
 
 @Component({
@@ -8,7 +9,24 @@ import Swiper from 'swiper';
 })
 export class HomeComponent {
 
+  videoUrl: SafeResourceUrl;
+ 
+  @ViewChild('youtubeIframe') youtubeIframe!: ElementRef;
+  @ViewChild('videoModal') videoModal!: ElementRef;
+
+  constructor(private sanitizer: DomSanitizer) {
+    // Sanitize URL to prevent security issues
+    this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+      'https://www.youtube.com/embed/Y7f98aduVJ8'
+    );
+  }
+  
   ngAfterViewInit() {
+
+    this.videoModal.nativeElement.addEventListener('hidden.bs.modal', () => {
+      this.stopVideo();
+    });
+    
     new Swiper('.swiper-container1', {
       loop: true,
       speed: 600,
@@ -58,5 +76,9 @@ export class HomeComponent {
         clickable: true
       }
     });
+  }
+
+  stopVideo() {
+    this.youtubeIframe.nativeElement.src = this.youtubeIframe.nativeElement.src; // Reset iframe src
   }
 }
