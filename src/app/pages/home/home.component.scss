@@ -1,0 +1,16 @@
+.whyus {
+    background: linear-gradient(135deg, #1EB2CC, #006EBC);
+}
+.whyus-item {
+    background: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+    border-radius: 12px;
+}
+.whyus-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+.icon {
+    font-size: 2rem;
+    color: #f8d210;
+}

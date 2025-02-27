@@ -1,8 +1,10 @@
 <app-header></app-header>
   
-<router-outlet></router-outlet>
+<router-outlet class="light-background"></router-outlet>
 
 <app-footer></app-footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<button *ngIf="showButton" class="scroll-top" (click)="scrollToTop()">
+  ↑ Top
+</button>
