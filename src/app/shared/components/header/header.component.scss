@@ -1,0 +1,25 @@
+.banner {
+    background: linear-gradient(135deg, #1EB2CC, #006EBC);
+}
+
+nav .nav-link{
+    color:#ddd;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: #fff;
+}
+nav .nav-link:hover{
+    color: #fff;
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}

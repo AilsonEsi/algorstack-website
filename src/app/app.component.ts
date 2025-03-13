@@ -1,4 +1,5 @@
 import { Component, HostListener } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +9,16 @@ import { Component, HostListener } from '@angular/core';
 export class AppComponent {
   title = 'algorstack';
 
-  showButton = false;
+  isVisible = false;
 
   @HostListener('window:scroll', [])
   onScroll(): void {
-    this.showButton = window.scrollY > 300;
+    this.isVisible = window.scrollY > 300;
   }
 
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-
-
+  
 }
 
