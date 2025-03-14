@@ -4,14 +4,14 @@
 }
 
 nav .nav-link{
-    color:#ddd;
+    color:white;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    color: #fff;
+    color: #ddd;
 }
 nav .nav-link:hover{
-    color: #fff;
+    color: #ddd;
 }
 
 .navbar.scrolled {
@@ -23,4 +23,23 @@ nav .nav-link:hover{
 
 .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5); /* Optional: Set border color to white */
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1); /* Inverts color to white */
+  }
+
+  .header {
+    position: relative;
+    background: linear-gradient(135deg, rgba(30, 178, 204, 0.8), rgba(0, 110, 188, 0.8)), 
+                url('/assets/img/tech_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Ensures text is readable */
+    padding: 100px 0;
 }
