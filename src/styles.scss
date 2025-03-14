@@ -1,4 +1,33 @@
-.section-title h3::after {
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  
+  .section-title h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .section-title h3:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 160px;
+      height: 1px;
+      background: color-mix(in srgb, var(--default-color), transparent 60%);
+      left: 0;
+      right: 0;
+      bottom: 1px;
+      margin: auto;
+  
+  }
+  
+  .section-title h3::after {
     content: "";
     position: absolute;
     display: block;
@@ -9,7 +38,11 @@
     right: 0;
     bottom: 0;
     margin: auto;
-}
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
 
 .scroll-to-top {
     position: fixed;
@@ -38,3 +71,7 @@
   .scroll-to-top:active {
     transform: scale(0.9);
   }
+
+  .banner, .footer {
+    background: linear-gradient(135deg, #1EB2CC, #006EBC);
+}
