@@ -35,11 +35,19 @@ nav .nav-link:hover{
 
   .header {
     position: relative;
-    background: linear-gradient(135deg, rgba(30, 178, 204, 0.8), rgba(0, 110, 188, 0.8)), 
+    background: linear-gradient(135deg, rgba(30, 178, 204, 0.5), rgba(0, 110, 188, 0.5)), 
                 url('/assets/img/tech_image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white; /* Ensures text is readable */
     padding: 100px 0;
+}
+
+.wave-svg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    overflow: hidden;
 }
