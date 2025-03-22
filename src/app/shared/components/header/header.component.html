@@ -1,15 +1,19 @@
- <!-- Responsive navbar-->
- <nav id="navbar" class="navbar navbar-expand-lg fixed-top" [ngStyle]="{'background': navbarBackground}" style="position: fixed; width: 100%; top: 0; transition: 0.3s;">
+<!-- Responsive navbar-->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top"
+    style="position: fixed; width: 100%; top: 0; transition: 0.3s;">
     <div class="container px-5">
-      <a href="index.html" class="navbar-brand text-white">
-          <h4 class="fw-bold" style="text-transform: uppercase;">
-              <img src="/assets/img/AlgorStack_logo_svg.svg" height="60" >
-              AlgorStack</h4>
-      </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <a href="/" class="navbar-brand text-white">
+            <h4 class="fw-bold" style="text-transform: uppercase;">
+                <img src="/assets/img/AlgorStack_logo_svg.svg" height="60">
+                AlgorStack
+            </h4>
+        </a>
+        <button id="navbar-toggler-button" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" aria-current="page" href="#banner">Home</a></li>
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="#index">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Our Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#whyus">Why Why?</a></li>
@@ -17,57 +21,4 @@
             </ul>
         </div>
     </div>
-  </nav>
-   
-  <header id="banner" class="header banner py-5 text-white position-relative">
-    <div class="container px-5" style="padding-top: 5rem; padding-bottom: 5rem;">
-      <div class="row gx-5 align-items-center">
-        <!-- Left Side: Text Content -->
-        <div class="col-lg-6">
-          <div class="text-start my-5" data-aos="zoom-in">
-            <h1 class="display-5 fw-bolder mb-3">
-                We Turn Innovation into Success for Your Business
-            </h1>
-            <p class="lead text-light mb-4">
-                Smart solutions that connect your business to the future.            </p>
-            <div class="d-flex">
-              <a href="#exampleModalToggle" role="button" class="btn btn-primary btn-lg px-4 me-3">
-                Watch Video
-              </a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Right Side: Illustration -->
-        <div class="col-lg-6 text-center">
-          <img src="/assets/img/hero-img-2.png" class="img-fluid animated" alt="Business Illustration" data-aos="fade-left">
-        </div>
-      </div>
-    </div>
-     <!-- SVG Wave -->
-  <div class="wave-svg">
-    <svg style="pointer-events: none;" fill="currentColor" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
-        <defs>
-            <style>
-                .a {
-                    fill: none;
-                }
-                .b {
-                    clip-path: url(#a);
-                }
-                .d {
-                    opacity: 0.5;
-                    isolation: isolate;
-                }
-            </style>
-        </defs>
-        <clipPath id="a"><rect class="a" width="1920" height="75"></rect></clipPath>
-        <g class="b"><path class="c" d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48"></path></g>
-        <g class="b"><path class="d" d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10"></path></g>
-        <g class="b"><path class="d" d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24"></path></g>
-        <g class="b"><path class="d" d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150"></path></g>
-    </svg>
-</div>
-  </header>
- 
-  
+</nav>

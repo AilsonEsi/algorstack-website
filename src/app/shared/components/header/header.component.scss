@@ -1,53 +1,20 @@
-
-.site-color-gradient{
+.site-color-gradient {
     color: linear-gradient(135deg, #1EB2CC, #006EBC);
 }
 
-nav .nav-link{
-    color:white;
+nav .nav-link {
+    color: white;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    color: #ddd;
-}
-nav .nav-link:hover{
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: #ddd;
 }
 
-.navbar.scrolled {
-    background: rgba(255, 255, 255, 0.9) !important;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    transition: all 0.3s ease-in-out;
+nav .nav-link:hover {
+    color: #ddd;
 }
 
 .animated {
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
-
-.navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5); /* Optional: Set border color to white */
-  }
-
-  .navbar-toggler-icon {
-    filter: invert(1); /* Inverts color to white */
-  }
-
-  .header {
-    position: relative;
-    background: linear-gradient(135deg, rgba(30, 178, 204, 0.5), rgba(0, 110, 188, 0.5)), 
-                url('/assets/img/tech_image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white; /* Ensures text is readable */
-    padding: 100px 0;
-}
-
-.wave-svg {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    line-height: 0;
-    overflow: hidden;
 }
