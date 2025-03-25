@@ -28,6 +28,8 @@ export class HomeComponent {
   }
 
   stopVideo() {
-    this.videoUrl = ''; // Clears the iframe to stop video playback
-  }
+    this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+      ''
+    ); // Clears the iframe to stop video playback
+  } 
 }

@@ -1,3 +1,12 @@
+@keyframes up-down {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -33,4 +42,8 @@
     width: 100%;
     line-height: 0;
     overflow: hidden;
+}
+
+.banner .animated {
+    animation: up-down 4s ease-in-out infinite alternate-reverse both;
 }
