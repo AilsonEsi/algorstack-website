@@ -7,6 +7,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+
   videoUrl: SafeResourceUrl = '';
  
   @ViewChild('youtubeIframe') youtubeIframe!: ElementRef;
@@ -28,8 +29,6 @@ export class HomeComponent {
   }
 
   stopVideo() {
-    this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-      ''
-    ); // Clears the iframe to stop video playback
+    this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(''); // Clears the iframe to stop video playback
   } 
 }
