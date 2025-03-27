@@ -1,0 +1,39 @@
+.custom-software-section {
+    padding: 60px 0;
+    border-radius: 10px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: rgba(30, 178, 204, 0.1);
+    border-radius: 50%;
+}
+
+.animated-img {
+    animation: up-down 2s ease-in-out infinite alternate-reverse;
+}
+
+/* Smooth Floating Animation */
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}

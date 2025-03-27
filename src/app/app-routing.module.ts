@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { CustomSoftwareDevComponent } from './pages/custom-software-dev/custom-software-dev.component';
+import { CustomSoftwareDevComponent } from './pages/services/custom-software-dev/custom-software-dev.component';
 
 const routes: Routes = [
   {
@@ -10,7 +10,9 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   { path: '', component: HomeComponent },
-  { path: 'custom-softwre-development', component: CustomSoftwareDevComponent }
+  {
+    path: 'services/custom-softwre-development', component: CustomSoftwareDevComponent
+  }
 ];
 
 @NgModule({

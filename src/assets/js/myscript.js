@@ -1,4 +1,4 @@
-
+/*
 
 document.addEventListener("DOMContentLoaded", function () {
     
@@ -25,3 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initial state
     updateNavbar();
 });
+*/
