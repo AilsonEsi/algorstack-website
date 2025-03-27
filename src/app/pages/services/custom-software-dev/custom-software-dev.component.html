@@ -8,9 +8,9 @@
 
         <div class="row align-items-center">
             <!-- Left: Software Types Cards -->
-            <div class="col-md-6">
-                <div class="row g-4">
-                    <div *ngFor="let service of softwareTypes" class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-12">
+                <div class="row g-3">
+                    <div *ngFor="let service of softwareTypes" class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-card shadow-lg text-center p-4">
                             <div class="icon-box d-flex align-items-center justify-content-center">
                                 <i [class]="service.icon" class="fs-1 text-primary"></i>
@@ -22,10 +22,6 @@
                 </div>
             </div>
 
-            <!-- Right: Image or Illustration -->
-            <div class="col-md-6 text-center" data-aos="fade-left">
-                <img src="/assets/img/programming_hand.png" class="img-fluid" alt="Custom Software">
-            </div>
         </div>
     </div>
 </section>
