@@ -7,6 +7,23 @@
     }
 }
 
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-body i {
+    transition: color 0.3s ease;
+}
+
+.card:hover .card-body i {
+    color: #006EBC; /* Changes icon color on hover */
+}
+
 .banner {
     position: relative;
     background: linear-gradient(135deg, rgba(30, 178, 204, 0.5), rgba(0, 110, 188, 0.5)),
