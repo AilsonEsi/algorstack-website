@@ -14,7 +14,8 @@ export class HomeComponent {
   contactForm: FormGroup;
   successMessage: string = '';
   errorMessage: string = '';
- 
+  loading: boolean = false;
+
   @ViewChild('youtubeIframe') youtubeIframe!: ElementRef;
   @ViewChild('videoModal') videoModal!: ElementRef;
 
@@ -29,16 +30,45 @@ export class HomeComponent {
 
   onSubmit(): void {
     if (this.contactForm.valid) {
-      this.contactService.subscribeToMailchimp(this.contactForm.value).subscribe(
-        () => {
+
+      this.loading = true;
+
+      this.contactService.subscribeToMailchimp(this.contactForm.value).subscribe({
+        complete: () => {
+          this.successMessage = 'Message sent successfully!';
+          this.loading = false;
+          this.contactForm.reset();
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            this.successMessage = '';
+          }, 5000);
+        },
+        error: (error) => {
+          console.error(error);
+          this.errorMessage = 'Failed to send message. Please try again later.';
+          this.loading = false;
+          // Hide error message after 5 seconds
+          setTimeout(() => {
+            this.errorMessage = '';
+          }, 5000);
+        }
+      });
+    }
+
+    /*
+      this.contactService.subscribeToHubSpot(this.contactForm.value).subscribe({
+        next: (res) => {
+          console.log('Contact created:', res);
           this.successMessage = 'Message sent successfully!';
           this.contactForm.reset();
         },
-        (error) => {
+        error: (err) => {
+          console.error('Erro ao criar contato:', err);
           this.errorMessage = 'Failed to send message. Please try again later.';
         }
-      );
+      });
     }
+*/
   }
 
   ngAfterViewInit() {
@@ -56,5 +86,5 @@ export class HomeComponent {
 
   stopVideo() {
     this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(''); // Clears the iframe to stop video playback
-  } 
+  }
 }

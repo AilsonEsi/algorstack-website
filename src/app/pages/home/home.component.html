@@ -15,6 +15,9 @@
                             data-bs-target="#companyVideo" (click)="loadVideo('Y7f98aduVJ8')">
                             Watch Video
                         </a>
+                        <a class="btn btn-primary btn-lg px-4 me-3">
+                            Schedule Apointment
+                        </a>
                     </div>
                 </div>
             </div>
@@ -24,7 +27,7 @@
                 <img src="/assets/img/hero-img-2.png" class="img-fluid animated" alt="Business Illustration"
                     data-aos="fade-left">
             </div>
-            
+
         </div>
     </div>
     <!-- SVG Wave -->
@@ -267,28 +270,33 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="name-field" class="form-label">Your Name</label>
-                                <input type="text" class="form-control" id="name-field" formControlName="name" required>
+                                <input type="text" class="form-control" id="name-field" formControlName="name">
                             </div>
                             <div class="col-md-6">
                                 <label for="email-field" class="form-label">Your Email</label>
-                                <input type="email" class="form-control" id="email-field" formControlName="email"
-                                    required>
+                                <input type="email" class="form-control" id="email-field" formControlName="email">
                             </div>
                             <div class="col-12">
                                 <label for="subject-field" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject-field" formControlName="subject"
-                                    required>
+                                <input type="text" class="form-control" id="subject-field" formControlName="subject">
                             </div>
                             <div class="col-12">
                                 <label for="message-field" class="form-label">Message</label>
-                                <textarea class="form-control" id="message-field" rows="5" formControlName="message"
-                                    required></textarea>
+                                <textarea class="form-control" id="message-field" rows="5"
+                                    formControlName="message"></textarea>
                             </div>
                             <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Send 
-                                    <i class="bi bi-send"></i>
+                                <button type="submit" class="btn btn-primary"
+                                    [disabled]="contactForm.invalid || loading">
+                                    <ng-container *ngIf="!loading; else loadingTemplate">
+                                        Send <i class="bi bi-send"></i>
+                                    </ng-container>
+                                    <ng-template #loadingTemplate>
+                                        Sending... <i class="bi bi-hourglass-split"></i>
+                                    </ng-template>
                                 </button>
                             </div>
+
                         </div>
                         <div *ngIf="successMessage" class="alert alert-success mt-3">{{ successMessage }}</div>
                         <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ errorMessage }}</div>
