@@ -1,7 +1,8 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, Renderer2 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ContactService } from 'src/app/shared/services/contact.service';
+declare var Calendly: any;
 
 @Component({
   selector: 'app-home',
@@ -15,11 +16,12 @@ export class HomeComponent {
   successMessage: string = '';
   errorMessage: string = '';
   loading: boolean = false;
+  calendlyLoaded: boolean = false;
 
   @ViewChild('youtubeIframe') youtubeIframe!: ElementRef;
   @ViewChild('videoModal') videoModal!: ElementRef;
 
-  constructor(private fb: FormBuilder, private contactService: ContactService, private sanitizer: DomSanitizer) {
+  constructor(private fb: FormBuilder, private contactService: ContactService, private sanitizer: DomSanitizer, private renderer: Renderer2, private el: ElementRef) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -71,11 +73,19 @@ export class HomeComponent {
 */
   }
 
+  ngOnInit(): void {
+
+  }
+
   ngAfterViewInit() {
     // Ensure the video stops when the modal is closed
     this.videoModal.nativeElement.addEventListener('hide.bs.modal', () => {
       this.stopVideo();
     });
+  }
+
+  openCalendly() {
+    Calendly.initPopupWidget({ url: 'https://calendly.com/algorstack/new-meeting?hide_event_type_details=1&hide_gdpr_banner=1' });
   }
 
   loadVideo(videoId: string) {

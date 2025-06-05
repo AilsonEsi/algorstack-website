@@ -1,0 +1,39 @@
+<div class="container mt-4">
+    <h2 class="mb-4">Job Opportunities</h2>
+
+    <div class="row">
+        <div class="col-md-6 mb-3" *ngFor="let job of jobs">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">{{ job.title }}</h5>
+                    <p class="card-text">
+                        <strong>Location:</strong> {{ job.location }}<br>
+                        <strong>Department:</strong> {{ job.department }}<br>
+                        <strong>Posted:</strong> {{ job.postedDate }}
+                    </p>
+                    <button class="btn btn-primary btn-sm" (click)="viewDetails(job)">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Job Details Modal -->
+    <div class="modal fade show" tabindex="-1" role="dialog" *ngIf="selectedJob">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">adasdasd</h5>
+                    <button type="button" class="close" (click)="closeDetails()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Location:</strong> asdasdasd</p>
+                    <p><strong>Department:</strong> asdasdasdas</p>
+                    <p><strong>Description:</strong> asdasdfasasfs</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" (click)="closeDetails()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

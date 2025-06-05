@@ -1,14 +1,9 @@
 <app-header></app-header>
-  
+
 <router-outlet></router-outlet>
 
 <app-footer></app-footer>
 
-<button
-  class="scroll-to-top"
-  (click)="scrollToTop()"
-  *ngIf="isVisible"
-  data-aos="fade-up"
->
+<button class="scroll-to-top" (click)="scrollToTop()" *ngIf="isVisible" data-aos="fade-up">
   ↑
 </button>

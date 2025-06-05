@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-schedule-apointment',
-  imports: [],
   templateUrl: './schedule-apointment.component.html',
-  styleUrl: './schedule-apointment.component.scss'
+  styleUrls: ['./schedule-apointment.component.scss']
 })
 export class ScheduleApointmentComponent {
 
+   constructor(private renderer: Renderer2, private el: ElementRef) {}
+
+  ngOnInit(): void {
+ 
+  }
+  
 }
