@@ -6,7 +6,7 @@ import { Router, NavigationEnd } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent { 
+export class HeaderComponent {
 
   isHome: boolean = false;
 
@@ -14,12 +14,13 @@ export class HeaderComponent {
     private router: Router,
     private renderer: Renderer2,
     private elRef: ElementRef
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        this.isHome = (!event.url.includes('services'))? true: false;
+        const url = event.url;
+        this.isHome = !(url.includes('services') || url.includes('jobs'));
         this.updateNavbar();
       }
     });

@@ -25,30 +25,7 @@ export class ListJobOportunityComponent {
   }
   
   jobs: Job[] = [
-    {
-      id: 1,
-      title: 'Frontend Developer',
-      location: 'New York, NY',
-      department: 'Engineering',
-      postedDate: new Date('2025-06-01'),
-      description: 'Develop and maintain UI components in Angular.'
-    },
-    {
-      id: 2,
-      title: 'Product Manager',
-      location: 'Remote',
-      department: 'Product',
-      postedDate: new Date('2025-05-28'),
-      description: 'Lead cross-functional teams to deliver features.'
-    },
-    {
-      id: 3,
-      title: 'HR Specialist',
-      location: 'London, UK',
-      department: 'Human Resources',
-      postedDate: new Date('2025-05-20'),
-      description: 'Manage hiring and onboarding processes.'
-    }
+    
   ];
 
   selectedJob: Job | null = null;

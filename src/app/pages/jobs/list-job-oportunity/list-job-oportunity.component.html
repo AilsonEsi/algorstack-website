@@ -1,39 +1,54 @@
-<div class="container mt-4">
-    <h2 class="mb-4">Job Opportunities</h2>
+<section style="margin-top: 100px;" class="pages-section py-4">
+  <div class="container">
 
-    <div class="row">
-        <div class="col-md-6 mb-3" *ngFor="let job of jobs">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">{{ job.title }}</h5>
-                    <p class="card-text">
-                        <strong>Location:</strong> {{ job.location }}<br>
-                        <strong>Department:</strong> {{ job.department }}<br>
-                        <strong>Posted:</strong> {{ job.postedDate }}
-                    </p>
-                    <button class="btn btn-primary btn-sm" (click)="viewDetails(job)">View Details</button>
-                </div>
-            </div>
+    <!-- Section Title -->
+    <div class="section-title text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+      <h2 class="fw-bold">Job Opportunities</h2>
+      <p class="text-muted">Explore our current job openings and join our team to make a difference.</p>
+    </div>
+
+    <!-- No Jobs Available Message with Image -->
+    <div class="text-center mb-5" *ngIf="jobs.length === 0" data-aos="fade-up" data-aos-delay="200">
+      <img src="assets/img/2953962.jpg" alt="No Jobs Available" class="img-fluid" style="max-width: 300px; opacity: 0.8;">
+      <h5 class="mt-4">No job opportunities are currently available.</h5>
+      <p class="text-muted">Please check back later or visit our careers page for future updates.</p>
+    </div>
+
+    <!-- Job List -->
+    <div class="row" *ngIf="jobs.length > 0">
+      <div class="col-md-6 mb-3" *ngFor="let job of jobs" data-aos="fade-up" data-aos-delay="200">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">{{ job.title }}</h5>
+            <p class="card-text">
+              <strong>Location:</strong> {{ job.location }}<br>
+              <strong>Department:</strong> {{ job.department }}<br>
+              <strong>Posted:</strong> {{ job.postedDate }}
+            </p>
+            <button class="btn btn-primary btn-sm" (click)="viewDetails(job)">View Details</button>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Job Details Modal -->
     <div class="modal fade show" tabindex="-1" role="dialog" *ngIf="selectedJob">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">adasdasd</h5>
-                    <button type="button" class="close" (click)="closeDetails()">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <p><strong>Location:</strong> asdasdasd</p>
-                    <p><strong>Department:</strong> asdasdasdas</p>
-                    <p><strong>Description:</strong> asdasdfasasfs</p>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" (click)="closeDetails()">Close</button>
-                </div>
-            </div>
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ selectedJob.title }}</h5>
+            <button type="button" class="close" (click)="closeDetails()">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Location:</strong> {{ selectedJob.location }}</p>
+            <p><strong>Department:</strong> {{ selectedJob.department }}</p>
+            <p><strong>Description:</strong> {{ selectedJob.description }}</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" (click)="closeDetails()">Close</button>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+</section>
