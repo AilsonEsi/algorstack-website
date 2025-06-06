@@ -25,7 +25,7 @@ export class ListJobOportunityComponent {
   }
   
   jobs: Job[] = [
-    {
+    /*{
       id: 1,
       title: 'Frontend Developer',
       location: 'New York, NY',
@@ -48,7 +48,7 @@ export class ListJobOportunityComponent {
       department: 'Human Resources',
       postedDate: new Date('2025-05-20'),
       description: 'Manage hiring and onboarding processes.'
-    }
+    }*/
   ];
 
   selectedJob: Job | null = null;
