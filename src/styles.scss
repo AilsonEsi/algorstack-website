@@ -1,4 +1,25 @@
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.container, .row, .col {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wave-svg svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 .section-title {
+
     text-align: center;
     text-transform: uppercase;
   }

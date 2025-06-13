@@ -1,325 +1,339 @@
-<header id="banner" class="banner banner py-5 text-white position-relative" style="background: linear-gradient(135deg, rgba(30, 178, 204, 0.751), rgba(0, 110, 188, 0.805)),
+<div style="overflow-x: hidden;">
+    <header id="banner" class="banner banner py-5 text-white position-relative" style="background: linear-gradient(135deg, rgba(30, 178, 204, 0.751), rgba(0, 110, 188, 0.805)),
         url('assets/img/tech_image.jpg'); background-size: cover; background-position: center;">
-    <div class="container px-5" style="padding-top: 5rem; padding-bottom: 5rem;">
-        <div class="row gx-5 align-items-center">
-            <!-- Left Side: Text Content -->
-            <div class="col-lg-6">
-                <div class="text-start my-5" data-aos="zoom-in">
-                    <h1 class="display-5 fw-bolder mb-3">
-                        We Turn Innovation into Success for Your Business
-                    </h1>
-                    <p class="lead text-light mb-4">
-                        Smart solutions that connect your business to the future. </p>
-                    <div class="d-flex">
-                        <!-- Button to Open Modal -->
-                        <a role="button" class="btn btn-sm btn-primary px-4 me-3" data-bs-toggle="modal"
-                            data-bs-target="#companyVideo" (click)="loadVideo('')">
-                            Meet Our Company
-                        </a>
-                        <a class="btn btn-sm btn-primary px-4 me-3" (click)="openCalendly()">
-                            Schedule a Meeting
-                        </a>
+        <div class="container px-5" style="padding-top: 5rem; padding-bottom: 5rem;">
+            <div class="row gx-5 align-items-center">
+                <!-- Left Side: Text Content -->
+                <div class="col-lg-6">
+                    <div class="text-start my-5" data-aos="zoom-in">
+                        <h1 class="display-5 fw-bolder mb-3">
+                            We Turn Innovation into Success for Your Business
+                        </h1>
+                        <p class="lead text-light mb-4">
+                            Smart solutions that connect your business to the future. </p>
+                        <div class="d-flex">
+                            <!-- Button to Open Modal -->
+                            <a role="button" class="btn btn-sm btn-primary px-4 me-3" data-bs-toggle="modal"
+                                data-bs-target="#companyVideo" (click)="loadVideo('')">
+                                Meet Our Company
+                            </a>
+                            <a class="btn btn-sm btn-primary px-4 me-3" (click)="openCalendly()">
+                                Schedule a Meeting
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Right Side: Illustration -->
-            <div class="col-lg-6 text-center">
-                <img src="assets/img/hero-img-2.png" class="img-fluid animated" alt="Business Illustration"
-                    data-aos="fade-left">
-            </div>
-
-        </div>
-    </div>
-    <!-- SVG Wave -->
-    <div class="wave-svg">
-        <svg style="pointer-events: none;" fill="currentColor" preserveAspectRatio="none"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
-            <defs>
-                <style>
-                    .a {
-                        fill: none;
-                    }
-
-                    .b {
-                        clip-path: url(#a);
-                    }
-
-                    .d {
-                        opacity: 0.5;
-                        isolation: isolate;
-                    }
-                </style>
-            </defs>
-            <clipPath id="a">
-                <rect class="a" width="1920" height="75"></rect>
-            </clipPath>
-            <g class="b">
-                <path class="c"
-                    d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48">
-                </path>
-            </g>
-            <g class="b">
-                <path class="d"
-                    d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10">
-                </path>
-            </g>
-            <g class="b">
-                <path class="d"
-                    d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24">
-                </path>
-            </g>
-            <g class="b">
-                <path class="d"
-                    d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150">
-                </path>
-            </g>
-        </svg>
-    </div>
-</header>
-
-<main id="main" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy" tabindex="0">
-
-    <section id="about" class="about section py-5">
-        <div class="container">
-            <div class="row align-items-center aos-animate">
-                <div class="col-md-6 text-center" data-aos="fade-up">
-                    <img src="assets/img/About_Us_Ilustration.jpg"
-                        class="img-fluid shadow-lg rounded-3 border-start border-start-lg border-gray-400"
-                        alt="About Us">
+                <!-- Right Side: Illustration -->
+                <div class="col-lg-6 text-center">
+                    <img src="assets/img/hero-img-2.png" class="img-fluid animated" alt="Business Illustration"
+                        data-aos="fade-left">
                 </div>
-                <div class="col-md-6">
-                    <div class="section-title">
-                        <h3 class="fw-bold text-center m-4" data-aos="fade-up" data-aos-delay="200">About Us</h3>
-                    </div>
-                    <p style="text-align: justify;" data-aos="fade-up" data-aos-delay="400">
-                        Agorstack is a tech company driven by a passion for creating smart, modern solutions that help
-                        businesses grow and adapt in a fast-changing digital world. We focus on making the future more
-                        connected to the present—through technology that supports real progress and ongoing innovation.
 
-                        The company was founded in 2025 by our current CEO, a seasoned IT professional with a background
-                        in Systems Engineering. With years of hands-on experience in software development and digital
-                        transformation, Agorstack was built to help organizations make confident, future-ready
-                        technology decisions.
-                    </p>
-                    <a class="btn btn-outline-dark btn-lg px-4 site-color-gradient" href="#!" data-aos="fade-up"
-                        data-aos-delay="400">Learn More</a>
-                </div>
             </div>
         </div>
-    </section>
+        <!-- SVG Wave -->
+        <div class="wave-svg">
+            <svg style="pointer-events: none;" fill="currentColor" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+                <defs>
+                    <style>
+                        .a {
+                            fill: none;
+                        }
 
-    <section id="services" class="services section py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5 section-title" data-aos="fade-up">
-                <h3 class="fw-bold">Our Services</h3>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card shadow-sm text-center p-4">
-                        <div class="card-body">
-                            <i class="bi bi-code-slash fs-1 text-primary"></i>
-                            <h4 class="mt-3">Custom Software Development</h4>
-                            <p>We leverage cutting-edge technology to deliver innovative solutions tailored to your
-                                needs.</p>
-                            <a class="btn btn-outline-dark" routerLink="services/custom-softwre-development">See more
-                                <i class="bi bi-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card shadow-sm text-center p-4">
-                        <div class="card-body">
-                            <i class="bi bi-lightbulb fs-1 text-primary"></i>
-                            <h4 class="mt-3">IT Consulting</h4>
-                            <p>Our experts provide strategic guidance to help businesses optimize their IT
-                                infrastructure.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                    <div class="card shadow-sm text-center p-4">
-                        <div class="card-body">
-                            <i class="bi bi-pc fs-1 text-primary"></i>
-                            <h4 class="mt-3">Hardware & Software Sales</h4>
-                            <p>We offer high-quality hardware and software solutions to meet your business needs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="800">
-                    <div class="card shadow-sm text-center p-4">
-                        <div class="card-body">
-                            <i class="bi bi-tools fs-1 text-primary"></i>
-                            <h4 class="mt-3">Technical Support</h4>
-                            <p>Reliable technical support to keep your systems running smoothly.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="1000">
-                    <div class="card shadow-sm text-center p-4">
-                        <div class="card-body">
-                            <i class="bi bi-person-video3 fs-1 text-primary"></i>
-                            <h4 class="mt-3">Corporate Training</h4>
-                            <p>Customized corporate training programs to upskill your workforce.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="1200">
-                    <div class="card shadow-sm text-center p-4">
-                        <div class="card-body">
-                            <i class="bi bi-mortarboard fs-1 text-primary"></i>
-                            <h4 class="mt-3">IT Training Academy</h4>
-                            <p>Specialized IT training academy to develop the next generation of tech professionals.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        .b {
+                            clip-path: url(#a);
+                        }
+
+                        .d {
+                            opacity: 0.5;
+                            isolation: isolate;
+                        }
+                    </style>
+                </defs>
+                <clipPath id="a">
+                    <rect class="a" width="1920" height="75"></rect>
+                </clipPath>
+                <g class="b">
+                    <path class="c"
+                        d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48">
+                    </path>
+                </g>
+                <g class="b">
+                    <path class="d"
+                        d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10">
+                    </path>
+                </g>
+                <g class="b">
+                    <path class="d"
+                        d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24">
+                    </path>
+                </g>
+                <g class="b">
+                    <path class="d"
+                        d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150">
+                    </path>
+                </g>
+            </svg>
         </div>
-    </section>
+    </header>
 
-    <section id="whyus" class="whyus section py-5 bg-white">
-        <div class="container text-center">
+    <main id="main" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy" tabindex="0">
 
-            <!-- Section Title -->
-            <div class="section-title text-center mb-5" data-aos="fade-up" data-aos-delay="200">
-                <h2 class="fw-bold">Why Choose Our Services?</h2>
-                <p class="text-muted">We provide top-tier technology solutions designed to drive digital transformation
-                    and business
-                    success.</p>
+        <section id="about" class="about section py-5">
+            <div class="container">
+                <div class="row align-items-center aos-animate">
+                    <div class="col-md-6 text-center" data-aos="fade-up">
+                        <img src="assets/img/About_Us_Ilustration.jpg"
+                            class="img-fluid shadow-lg rounded-3 border-start border-start-lg border-gray-400"
+                            alt="About Us">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="section-title">
+                            <h3 class="fw-bold text-center m-4" data-aos="fade-up" data-aos-delay="200">About Us</h3>
+                        </div>
+                        <p style="text-align: justify;" data-aos="fade-up" data-aos-delay="400">
+                            Agorstack is a tech company driven by a passion for creating smart, modern solutions that
+                            help
+                            businesses grow and adapt in a fast-changing digital world. We focus on making the future
+                            more
+                            connected to the present—through technology that supports real progress and ongoing
+                            innovation.
+
+                            The company was founded in 2025 by our current CEO, a seasoned IT professional with a
+                            background
+                            in Systems Engineering. With years of hands-on experience in software development and
+                            digital
+                            transformation, Agorstack was built to help organizations make confident, future-ready
+                            technology decisions.
+                        </p>
+                        <a class="btn btn-outline-dark btn-lg px-4 site-color-gradient" href="#!" data-aos="fade-up"
+                            data-aos-delay="400">Learn More</a>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="row align-items-center mt-4">
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li class="d-flex align-items-start mb-3" data-aos="fade-right">
-                            <i class="bi bi-cpu fs-2 text-primary me-3"></i>
-                            <div>
-                                <h5 class="fw-bold">Cutting-Edge Technology</h5>
-                                <p>We use the latest frameworks and innovations to ensure robust and scalable solutions.
+        <section id="services" class="services section py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5 section-title" data-aos="fade-up">
+                    <h3 class="fw-bold">Our Services</h3>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card shadow-sm text-center p-4">
+                            <div class="card-body">
+                                <i class="bi bi-code-slash fs-1 text-primary"></i>
+                                <h4 class="mt-3">Custom Software Development</h4>
+                                <p>We leverage cutting-edge technology to deliver innovative solutions tailored to your
+                                    needs.</p>
+                                <a class="btn btn-outline-dark" routerLink="services/custom-softwre-development">See
+                                    more
+                                    <i class="bi bi-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card shadow-sm text-center p-4">
+                            <div class="card-body">
+                                <i class="bi bi-lightbulb fs-1 text-primary"></i>
+                                <h4 class="mt-3">IT Consulting</h4>
+                                <p>Our experts provide strategic guidance to help businesses optimize their IT
+                                    infrastructure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card shadow-sm text-center p-4">
+                            <div class="card-body">
+                                <i class="bi bi-pc fs-1 text-primary"></i>
+                                <h4 class="mt-3">Hardware & Software Sales</h4>
+                                <p>We offer high-quality hardware and software solutions to meet your business needs.
                                 </p>
                             </div>
-                        </li>
-                        <li class="d-flex align-items-start mb-3" data-aos="fade-right" data-aos-delay="200">
-                            <i class="bi bi-shield-check fs-2 text-primary me-3"></i>
-                            <div>
-                                <h5 class="fw-bold">Reliable and Secure</h5>
-                                <p>Our systems are designed with high security standards and reliability in mind.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="800">
+                        <div class="card shadow-sm text-center p-4">
+                            <div class="card-body">
+                                <i class="bi bi-tools fs-1 text-primary"></i>
+                                <h4 class="mt-3">Technical Support</h4>
+                                <p>Reliable technical support to keep your systems running smoothly.</p>
                             </div>
-                        </li>
-                        <li class="d-flex align-items-start mb-3" data-aos="fade-right" data-aos-delay="400">
-                            <i class="bi bi-people fs-2 text-primary me-3"></i>
-                            <div>
-                                <h5 class="fw-bold">Expert Professionals</h5>
-                                <p>Our experienced team brings deep technical expertise to every project.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="card shadow-sm text-center p-4">
+                            <div class="card-body">
+                                <i class="bi bi-person-video3 fs-1 text-primary"></i>
+                                <h4 class="mt-3">Corporate Training</h4>
+                                <p>Customized corporate training programs to upskill your workforce.</p>
                             </div>
-                        </li>
-                        <li class="d-flex align-items-start mb-3" data-aos="fade-right" data-aos-delay="600">
-                            <i class="bi bi-graph-up-arrow fs-2 text-primary me-3"></i>
-                            <div>
-                                <h5 class="fw-bold">Future-Ready Solutions</h5>
-                                <p>We create scalable solutions that evolve with your business needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="1200">
+                        <div class="card shadow-sm text-center p-4">
+                            <div class="card-body">
+                                <i class="bi bi-mortarboard fs-1 text-primary"></i>
+                                <h4 class="mt-3">IT Training Academy</h4>
+                                <p>Specialized IT training academy to develop the next generation of tech professionals.
+                                </p>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6 text-center" data-aos="fade-left">
-                    <img src="assets/img/why_us.jpg"
-                        class="img-fluid shadow-lg rounded-3 border-start border-start-lg border-gray-400"
-                        alt="Our Services">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact section py-5 bg-light" data-aos="fade-up">
-        <div class="container">
-            <div class="section-title">
-                <h2 class="text-center fw-bold">Contact Us</h2>
-            </div>
-            <div class="row g-4 mt-4">
-                <div class="col-lg-5" data-aos="fade-right">
-                    <div class="d-flex align-items-start mb-3">
-                        <i class="bi bi-geo-alt fs-3 text-primary me-3"></i>
-                        <div>
-                            <h4>Address</h4>
-                            <p>Cape Verde, Palmarejo Av. Santo Antao, 7610</p>
-                        </div>
+        <section id="whyus" class="whyus section py-5 bg-white">
+            <div class="container text-center">
+
+                <!-- Section Title -->
+                <div class="section-title text-center mb-5" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="fw-bold">Why Choose Our Services?</h2>
+                    <p class="text-muted">We provide top-tier technology solutions designed to drive digital
+                        transformation
+                        and business
+                        success.</p>
+                </div>
+
+                <div class="row align-items-center mt-4">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-start mb-3" data-aos="fade-right">
+                                <i class="bi bi-cpu fs-2 text-primary me-3"></i>
+                                <div>
+                                    <h5 class="fw-bold">Cutting-Edge Technology</h5>
+                                    <p>We use the latest frameworks and innovations to ensure robust and scalable
+                                        solutions.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-3" data-aos="fade-right" data-aos-delay="200">
+                                <i class="bi bi-shield-check fs-2 text-primary me-3"></i>
+                                <div>
+                                    <h5 class="fw-bold">Reliable and Secure</h5>
+                                    <p>Our systems are designed with high security standards and reliability in mind.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-3" data-aos="fade-right" data-aos-delay="400">
+                                <i class="bi bi-people fs-2 text-primary me-3"></i>
+                                <div>
+                                    <h5 class="fw-bold">Expert Professionals</h5>
+                                    <p>Our experienced team brings deep technical expertise to every project.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start mb-3" data-aos="fade-right" data-aos-delay="600">
+                                <i class="bi bi-graph-up-arrow fs-2 text-primary me-3"></i>
+                                <div>
+                                    <h5 class="fw-bold">Future-Ready Solutions</h5>
+                                    <p>We create scalable solutions that evolve with your business needs.</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="d-flex align-items-start mb-3">
-                        <i class="bi bi-telephone fs-3 text-primary me-3"></i>
-                        <div>
-                            <h4>Call Us</h4>
-                            <p>+238 592 12 05</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start">
-                        <i class="bi bi-envelope fs-3 text-primary me-3"></i>
-                        <div>
-                            <h4>Email Us</h4>
-                            <p>algorstack&#64;gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-start">
-                        <i class="bi bi-instagram fs-3 text-primary me-3"></i>
-                        <div>
-                            <h4>Follow Us</h4>
-                            <p>&#64;algorstack </p>
-                            <img src="assets/img/algorstack_qr.png" class="img-fluid" width="100">
-                        </div>
+                    <div class="col-md-6 text-center" data-aos="fade-left">
+                        <img src="assets/img/why_us.jpg"
+                            class="img-fluid shadow-lg rounded-3 border-start border-start-lg border-gray-400"
+                            alt="Our Services">
                     </div>
                 </div>
-                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
-                    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="needs-validation" novalidate>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label for="name-field" class="form-label">Your Name</label>
-                                <input type="text" class="form-control" id="name-field" formControlName="name">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email-field" class="form-label">Your Email</label>
-                                <input type="email" class="form-control" id="email-field" formControlName="email">
-                            </div>
-                            <div class="col-12">
-                                <label for="subject-field" class="form-label">Subject</label>
-                                <input type="text" class="form-control" id="subject-field" formControlName="subject">
-                            </div>
-                            <div class="col-12">
-                                <label for="message-field" class="form-label">Message</label>
-                                <textarea class="form-control" id="message-field" rows="5"
-                                    formControlName="message"></textarea>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-primary"
-                                    [disabled]="contactForm.invalid || loading">
-                                    <ng-container *ngIf="!loading; else loadingTemplate">
-                                        Send <i class="bi bi-send"></i>
-                                    </ng-container>
-                                    <ng-template #loadingTemplate>
-                                        Sending... <i class="bi bi-hourglass-split"></i>
-                                    </ng-template>
-                                </button>
-                            </div>
+            </div>
+        </section>
 
+        <section id="contact" class="contact section py-5 bg-light" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="text-center fw-bold">Contact Us</h2>
+                </div>
+                <div class="row g-4 mt-4">
+                    <div class="col-lg-5" data-aos="fade-right">
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-geo-alt fs-3 text-primary me-3"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Cape Verde, Palmarejo Av. Santo Antao, 7610</p>
+                            </div>
                         </div>
-                        <div *ngIf="successMessage" class="alert alert-success mt-3">{{ successMessage }}</div>
-                        <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ errorMessage }}</div>
-                    </form>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-telephone fs-3 text-primary me-3"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+238 592 12 05</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <i class="bi bi-envelope fs-3 text-primary me-3"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>algorstack&#64;gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <i class="bi bi-instagram fs-3 text-primary me-3"></i>
+                            <div>
+                                <h4>Follow Us</h4>
+                                <p>&#64;algorstack </p>
+                                <img src="assets/img/algorstack_qr.png" class="img-fluid" width="100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name-field" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name-field" formControlName="name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email-field" class="form-label">Your Email</label>
+                                    <input type="email" class="form-control" id="email-field" formControlName="email">
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject-field" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject-field"
+                                        formControlName="subject">
+                                </div>
+                                <div class="col-12">
+                                    <label for="message-field" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message-field" rows="5"
+                                        formControlName="message"></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary"
+                                        [disabled]="contactForm.invalid || loading">
+                                        <ng-container *ngIf="!loading; else loadingTemplate">
+                                            Send <i class="bi bi-send"></i>
+                                        </ng-container>
+                                        <ng-template #loadingTemplate>
+                                            Sending... <i class="bi bi-hourglass-split"></i>
+                                        </ng-template>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div *ngIf="successMessage" class="alert alert-success mt-3">{{ successMessage }}</div>
+                            <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ errorMessage }}</div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
-<!-- Modal -->
-<div class="modal fade" id="companyVideo" #videoModal tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-body">
-                <iframe #youtubeIframe width="100%" height="400" [src]="videoUrl" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
+    <!-- Modal -->
+    <div class="modal fade" id="companyVideo" #videoModal tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe #youtubeIframe width="100%" height="400" [src]="videoUrl" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </div>
     </div>
