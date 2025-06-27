@@ -40,5 +40,17 @@ export class AppComponent {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
+  navigateToSection(fragment: string): void {
+    this.router.navigateByUrl('/').then(() => {
+      // Wait a tick to allow DOM to render
+      setTimeout(() => {
+        const el = document.getElementById(fragment);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 50);
+    });
+  }
+
 }
 

@@ -1,8 +1,8 @@
-<app-header></app-header>
+<app-header [navigateToSection]="navigateToSection.bind(this)"></app-header>
 
 <router-outlet></router-outlet>
 
-<app-footer></app-footer>
+<app-footer [navigateToSection]="navigateToSection.bind(this)"></app-footer>
 
 <button class="scroll-to-top" (click)="scrollToTop()" *ngIf="isVisible" data-aos="fade-up">
   ↑

@@ -1,21 +1,28 @@
 <footer class="footer py-4 bg-dark text-white">
   <div class="container">
     <div class="row align-items-center">
-      <!-- Website Name -->
       <div class="col-md-4 text-center text-md-start">
-        <h4 class="fw-bold" style="text-transform: uppercase;">
-          <img src="assets/img/AlgorStack_logo_svg.svg" height="60" >
-          AlgorStack</h4>
+        <a href="/" class="text-white text-decoration-none">
+          <h4 class="fw-bold" style="text-transform: uppercase;">
+            <img src="assets/img/AlgorStack_logo_svg.svg" height="60">
+            AlgorStack
+          </h4>
+        </a>
       </div>
 
       <!-- Navigation Links -->
       <div class="col-md-4 text-center">
         <ul class="list-inline mb-0">
-          <li class="list-item"><a href="#banner" class="text-white text-decoration-none">Home</a></li>
-          <li class="list-item mx-3"><a href="#about" class="text-white text-decoration-none">About Us</a></li>
-          <li class="list-item"><a href="#services" class="text-white text-decoration-none">Services</a></li>
-          <li class="list-item mx-3"><a href="#whyus" class="text-white text-decoration-none">Why Choose Us</a></li>
-          <li class="list-item"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+          <li class="list-item"><a (click)="navigateToSection('index')" class="text-white text-decoration-none">Home</a>
+          </li>
+          <li class="list-item mx-3"><a (click)="navigateToSection('about')"
+              class="text-white text-decoration-none">About Us</a></li>
+          <li class="list-item"><a (click)="navigateToSection('services')"
+              class="text-white text-decoration-none">Services</a></li>
+          <li class="list-item mx-3"><a (click)="navigateToSection('whyus')" class="text-white text-decoration-none">Why
+              Choose Us</a></li>
+          <li class="list-item"><a (click)="navigateToSection('contact')"
+              class="text-white text-decoration-none">Contact</a></li>
         </ul>
       </div>
 

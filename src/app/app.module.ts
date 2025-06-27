@@ -10,13 +10,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CustomSoftwareDevComponent } from './pages/services/custom-software-dev/custom-software-dev.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListJobOportunityComponent } from './pages/jobs/list-job-oportunity/list-job-oportunity.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CustomSoftwareDevComponent,
-    ListJobOportunityComponent
+    ListJobOportunityComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,

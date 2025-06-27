@@ -3,6 +3,10 @@ html, body {
   max-width: 100%;
 }
 
+a{
+ cursor: pointer !important;
+}
+
 .container, .row, .col {
   box-sizing: border-box;
 }
@@ -94,3 +98,4 @@ img {
   .banner, .footer {
     background: linear-gradient(135deg, #1EB2CC, #006EBC);
 }
+

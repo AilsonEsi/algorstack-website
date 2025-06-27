@@ -1,0 +1,73 @@
+.about-us-container {
+    text-align: center;
+    padding: 3rem 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.circle-box {
+    max-width: 300px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.circle-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.circle-icon ::before {
+    font-size: 20pt;
+}
+
+.vision .circle-icon {
+    background-color: #1d71b8;
+}
+
+.mission .circle-icon {
+    background-color: #f68b1e;
+}
+
+.values .circle-icon {
+    background-color: #d62828;
+}
+
+.circle-box h3 {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.circle-box p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-top: 0.5rem;
+}

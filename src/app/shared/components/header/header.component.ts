@@ -1,4 +1,4 @@
-import { Component, ElementRef, Renderer2, OnInit, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, Renderer2, OnInit, AfterViewInit, Input } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -9,6 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class HeaderComponent {
 
   isHome: boolean = false;
+ @Input() navigateToSection!: (fragment: string) => void;
 
   constructor(
     private router: Router,
@@ -20,7 +21,7 @@ export class HeaderComponent {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         const url = event.url;
-        this.isHome = !(url.includes('services') || url.includes('jobs'));
+        this.isHome = !(url.includes('services') || url.includes('jobs') || url.includes('about_us'));
         this.updateNavbar();
       }
     });
